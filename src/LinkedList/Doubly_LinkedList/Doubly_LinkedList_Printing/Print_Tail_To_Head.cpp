@@ -36,10 +36,10 @@ int main() {
     Node* node3 = new Node(30);
 
     // Connect the nodes
-    node1->next = node2;
-    node2->prev = node1;
-    node2->next = node3;
-    node3->prev = node2;
+    node1->next = node2;  //10 -> 20
+    node2->prev = node1;  //10 <-> 20 
+    node2->next = node3;  //20 -> 30
+    node3->prev = node2;  //20 <-> 30
 
     Node* tail = node3;
 

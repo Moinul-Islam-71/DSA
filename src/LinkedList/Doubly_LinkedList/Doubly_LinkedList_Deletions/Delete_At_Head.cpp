@@ -93,7 +93,7 @@ void freeList(Node* &head) {
     // Traverse the list and free each node
     while (current != NULL) {
         Node* next = current->next;
-        delete current;
+        delete current; sz--;
         current = next;
     }
 
